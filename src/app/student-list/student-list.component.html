@@ -1,0 +1,20 @@
+<h2>Student List</h2>
+<table class="table table-striped" style="border: 1px solid #000;">
+    <thead >
+        <tr>
+            <th>Name</th>
+            <th>Mobile Number</th>
+            <th>Email</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let Student of students">
+            <td> {{ Student.name}} </td>
+            <td> {{ Student.mobilenumber}} </td>
+            <td> {{Student.email}} </td>
+            <td> {{Student.address}} </td>
+        </tr>
+    </tbody>
+
+</table>
