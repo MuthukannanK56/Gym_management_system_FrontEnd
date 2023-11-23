@@ -8,13 +8,19 @@ import { Student } from './student';
 })
 export class StudentService {
 
-  private baseURL = "http://localhost:8080/api/v1/student";
-  constructor( private httpClient: HttpClient) { }
+  private baseURL = "http://localhost:8080/api/v1/";
+  // private baseeURL = "http://localhost:8080/api/v1/";
+  constructor(private httpClient: HttpClient) { }
 
-  getStudentList(): Observable<Student[]>{
+  getStudentList(): Observable<Student[]> {
 
-    return this.httpClient.get<Student[]>(`${this.baseURL}`);
+    return this.httpClient.get<Student[]>(`${this.baseURL}` + 'student');
 
+  }
+
+  createStudent(students: Student): Observable<any> {
+
+    return this.httpClient.post(`${this.baseURL}` + 'addstudent', students);
   }
 
 }
