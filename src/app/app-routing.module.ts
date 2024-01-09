@@ -13,6 +13,7 @@ const routes: Routes = [
   {path: 'student-details/:id', component:StudentDetailsComponent}
 ];
 
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

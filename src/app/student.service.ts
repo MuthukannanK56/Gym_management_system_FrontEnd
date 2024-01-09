@@ -15,7 +15,6 @@ export class StudentService {
   getStudentList(): Observable<Student[]> {
 
     return this.httpClient.get<Student[]>(`${this.baseURL}` + 'student');
-
   }
 
   createStudent(students: Student): Observable<any> {

@@ -17,7 +17,6 @@ export class StudentDetailsComponent implements OnInit {
               private router: Router){
 
   }
-
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];
     console.log(this.id, 'id');

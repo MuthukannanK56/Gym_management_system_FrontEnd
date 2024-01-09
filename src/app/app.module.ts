@@ -18,6 +18,7 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
     UpdateStudentComponent,
     StudentDetailsComponent
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,

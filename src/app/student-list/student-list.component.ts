@@ -43,6 +43,5 @@ export class StudentListComponent implements OnInit{
       this.router.navigate(['student-details', id]);
 
     }
-
    
 }

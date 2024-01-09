@@ -39,5 +39,6 @@ export class UpdateStudentComponent implements OnInit {
   gotoStudentListpage() {
     this.router.navigate(["/students"]);
   }
+  
 }
 
