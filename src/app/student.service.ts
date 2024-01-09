@@ -32,7 +32,9 @@ export class StudentService {
   updateStudent(id:number, student : Student): Observable<Object>{
     return this.httpClient.put<Student>(`${this.baseURL}`+'updatestudent/'+id,student);
 
-
+  }
+  deleteStudent(id:number):Observable<Object>{
+    return this.httpClient.delete(`${this.baseURL}`+'deletestudent/'+id);
   }
 
 }

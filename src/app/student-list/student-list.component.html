@@ -7,7 +7,8 @@
             <th>Mobile Number</th>
             <th>Email</th>
             <th>Address</th>
-            <th>Action</th>
+            <th style="text-align: center;">Action </th>
+            
         </tr>
     </thead>
     <tbody>
@@ -16,7 +17,11 @@
             <td> {{ Student.mobilenumber}} </td>
             <td> {{Student.email}} </td>
             <td> {{Student.address}} </td>
-            <td> <button (click)="updatestudent(Student.id)" class="btn btn-info">Update</button>
+            <td style="text-align: center;"> 
+                <button (click)="updatestudent(Student.id)" class="btn btn-info">Update</button>
+                <button (click)="studentDetails(Student.id)" class="btn btn-info" style="margin-left: 10px;">View</button>
+                <button (click)="deleteStudent(Student.id)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+                
             </td>
         </tr>
     </tbody>
